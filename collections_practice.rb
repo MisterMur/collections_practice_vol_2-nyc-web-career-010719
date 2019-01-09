@@ -45,7 +45,10 @@ def count_elements(array)
   #   end
   # end
   # array.uniq.map { |x| [x, array.count(x)] }.to_h
-  h = Hash.new(0)
-  array.each { |l| h[l] += 1 }
-  h.to_a
+  
+  # h = Hash.new(0)
+  # array.each { |l| h[l] += 1 }
+  # h.to_a
+  
+  arr.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
 end
