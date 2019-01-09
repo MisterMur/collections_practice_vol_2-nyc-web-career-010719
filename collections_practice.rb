@@ -44,7 +44,7 @@ def count_elements(array)
       #   hash[item] = 0
     end
   end
-  # array.uniq.map { |x| [x, array.count(x)] }.to_h
+   array.uniq.map { |x| [x, array.count(x)] }.to_h
   
   # h = Hash.new(0)
   # array.each { |l| h[l] += 1 }
