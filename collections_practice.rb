@@ -50,5 +50,5 @@ def count_elements(array)
   # array.each { |l| h[l] += 1 }
   # h.to_a
   
-  arr.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
+  array.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
 end
