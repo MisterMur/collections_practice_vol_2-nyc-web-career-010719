@@ -33,22 +33,22 @@ end
 
 
 def count_elements(array)
-  # array.each do |el|
-  #   array.count(el)
-  # end
-  # array.each_with_object(Hash.new(0)) do |hash, item|
-  #   # h2[h1[:name]] += 1 
-  #   if hash[item]
-  #     hash[item] += 1
-  #     else
-  #       hash[item] = 0
-  #   end
-  # end
-  # array.uniq.map { |x| [x, array.count(x)] }.to_h
+  array.each do |el|
+    array.count(el)
+  end
+  array.each_with_object(Hash.new(0)) do |hash, item|
+    # h2[h1[:name]] += 1 
+    if hash[item]
+      hash[item] += 1
+      else
+        hash[item] = 0
+    end
+  end
+  array.uniq.map { |x| [x, array.count(x)] }.to_h
   
-  # h = Hash.new(0)
-  # array.each { |l| h[l] += 1 }
-  # h.to_a
+  h = Hash.new(0)
+  array.each { |l| h[l] += 1 }
+  h.to_a
   
-  array.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
+  # array.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
 end
