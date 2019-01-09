@@ -40,8 +40,8 @@ def count_elements(array)
     # h2[h1[:name]] += 1 
     if hash[item]
       hash[:count] += 1
-      else
-        hash[item] = 0
+      # else
+      #   hash[item] = 0
     end
   end
   array.uniq.map { |x| [x, array.count(x)] }.to_h
