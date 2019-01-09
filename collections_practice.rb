@@ -35,7 +35,8 @@ end
 def count_elements(array)
     
   array.each do |hash|
-    hash[:count]=log10name = hash[:name]
+    hash[:count]=0
+    name = hash[:name]
     array.each do |new_hash|
       if new_hash[:name] ==name
         hash[:count]+=1
