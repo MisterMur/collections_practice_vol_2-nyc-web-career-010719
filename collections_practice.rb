@@ -33,9 +33,9 @@ end
 
 
 def count_elements(array)
-  array.each do |el|
-    array.count(el)
-  end
+  # array.each do |el|
+  #   array.count(el)
+  # end
   array.each_with_object(Hash.new(0)) do |hash, item|
     # h2[h1[:name]] += 1 
     if hash[item]
