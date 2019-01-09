@@ -46,5 +46,5 @@ def count_elements(array)
   array.uniq
 end
 
-def merge_data(array)
+def merge_data(keys,data)
 end
