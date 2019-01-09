@@ -37,7 +37,7 @@ def count_elements(array)
     array.count(el)
   end
   array.each_with_object(Hash.new(0)) do |hash, item|
-    # h2[h1[:name]] += 1 
+    h2[h1[:name]] += 1 
     if hash[item]
       hash[item] += 1
       else
